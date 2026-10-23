@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Panta's Bio</title>
+
+    <!-- External Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- 256x144 Downscaled Hardware Engine Canvas -->
+    <canvas id="weirdcoreCanvas" title="Click background to hide/show bio card"></canvas>
+
+    <!-- Interactive Bio Card Overlay -->
+    <div class="viewport-overlay" id="overlay">
+        <div class="profile-card">
+
+            <!-- CARD HEADER -->
+            <div class="card-header">
+                <div class="avatar-frame">
+                    <img src="https://i.imgur.com/2b67TrV.jpeg" alt="Avatar">
+                    <div class="online-status"></div>
+                </div>
+                <div class="username">⭐ Panta ⭐</div>
+                <div class="tagline">#GOATZ4LYFE!!!</div>
+            </div>
+
+            <!-- INNER SCROLLABLE CONTENT BODY -->
+            <div class="card-scroll-body">
+
+                <!-- ABOUT SECTION -->
+                <div>
+                    <div class="section-title">About Me</div>
+                    <div class="bio-text">
+                        Oh that me? Pure Aura.
+                    </div>
+                </div>
+
+                <!-- FEATURED BIG IMAGE DISPLAY SECTION (STATIC TITLE ONLY) -->
+                <div>
+                    <div class="section-title">Featured Image</div>
+                    <div class="featured-image-card">
+                        <img src="https://i.imgur.com/IwPJiZb.jpeg" alt="Featured Image Display">
+                        <div class="image-card-caption">
+                            <span>MY GOAT!!!</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ADDITIONAL INFO SECTION -->
+                <div>
+                    <div class="section-title">Additional Info</div>
+                    <div class="bio-text" style="font-family: monospace; font-size: 0.8rem; color: #ffffff;">
+                        #GOATZ4LYFE 🐐.
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- CARD FOOTER -->
+            <div class="card-footer">
+                © <span id="current-year"></span> SolarSailsSites. All Rights Reserved.
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Bottom Hint Badge -->
+    <div class="toggle-hint" id="hint">Click background to toggle view focus</div>
+
+    <!-- External Engine Script -->
+    <script src="script.js"></script>
+</body>
+
+</html>
